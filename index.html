@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbie's Fashion Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Barbie's Fashion Shop</h1>
+            <div class="balance">
+                <h2>Balance: $<span id="balance">1000</span></h2>
+            </div>
+            <div class="account">
+                <h2>MetaMask Account ID</h2>
+                <p id="account-id">Not connected</p>
+                <button onclick="connectMetaMask()">Connect to MetaMask</button>
+            </div>
+        </header>
+        <main>
+            <div class="inventory">
+                <h2>Inventory</h2>
+                <ul id="inventory-list">
+                    <!-- Purchased items will be listed here -->
+                </ul>
+            </div>
+            <div class="actions">
+                <button onclick="purchaseItem()">Purchase Item</button>
+                <button onclick="sellAllItems()">Donate All</button>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
